@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:600italic,400,600");
+:root {
+    --purple: #bbabdb;
+    --blue: #d6e5fa;
+
+    --font-size-small: 20px;
+    --font-size-medium: 35px;
+    --font-size-large: 90px;
+
+    --font-nunito: "Nunito";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-nunito);
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.main {
+    margin: 0 auto;
+    padding-top: 0rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+}
+
+.header h1 {
+    font-size: var(--font-size-large);
+    font-style: italic;
+    text-shadow: 1px 2px 4px gray;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+}
+
+.button {
+    font-size: var(--font-size-medium);
+    display: inline-block;
+    background-color: rgb(187,171,219);
+    color: #fff;
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 0rem;
+}
+
+.button:hover {
+    background-color: rgba(187,171,219, 0.4);
+}
+
+.section {
+    display: flex;
+    background-color: var(--purple);
+    padding: 2vw;
+    width: 80vw;
+    margin: auto;
+    border-radius: 30px;
+    margin-bottom: 5rem;
+    box-shadow: 1px 2px 4px gray;
+}
+
+.section-plus {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: rgba(187,171,219, 0.4);
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+    border-radius: 30px;
+    margin-bottom: 5rem;
+    box-shadow: 1px 2px 4px gray;
+
+}
+
+.section img {
+    width: 25%;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.section h2 {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #333;
+}
+
+.p {
+    font-size: var(--font-size-small);
+}
+
+.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 72px;
+    font-weight: bold;
+    color: #333;
+}
