@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400, 600italic, 700, 600, 700italic, 400italic");
+
+	body {
+		display: block;
+		margin: 0px;
+		background-image: linear-gradient(90deg, rgb(186, 171, 218) 0%, rgb(214, 229, 250) 100%);
+	}
+
+    :root {
+		--black: rgba(0, 0, 0, 1);
+		--soapstone: rgba(255, 249, 249, 1);
+		--white: rgba(255, 255, 255, 1);
+
+		--font-family-nunito: "Nunito";
+	}
+
+	.title {
+		font-family: var(--font-family-nunito);
+		text-align: center;
+		margin-top: 3%;
+		font-size: 6.5vw;
+		color: var(--soapstone);
+		font-style: italic;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	.details {
+		display: flex;
+		color: var(--soapstone);
+		font-style: italic;
+		font-family: var(--font-family-nunito);
+		font-size: 3.5vh;
+		margin-top: 1.3%;
+		background: rgba(215, 127, 161, 0.8);
+		border: 1px solid #FFFFFF;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 30px;
+		width: 40%;
+		height: 8vh;
+		justify-content: center;
+    	align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		transition:  0.2s;
+	}
+
+	.code {
+		display: flex;
+		color: var(--soapstone);
+		font-style: italic;
+		font-family: var(--font-family-nunito);
+		font-size: 3.5vh;
+		margin-top: 1.3%;
+		background: rgba(215, 127, 161, 0.8);
+		border: 1px solid #FFFFFF;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 30px;
+		width: 40%;
+		height: 8vh;
+		justify-content: center;
+    	align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		transition:  0.2s;
+	}
+
+	.access {
+		display: flex;
+		color: var(--soapstone);
+		font-style: italic;
+		font-family: var(--font-family-nunito);
+		font-size: 3.5vh;
+		margin-top: 1.3%;
+		background: rgba(215, 127, 161, 0.8);
+		border: 1px solid #FFFFFF;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 30px;
+		width: 40%;
+		height: 8vh;
+		justify-content: center;
+    	align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		transition:  0.2s;
+	}
+
+	.logout {
+		display: flex;
+		color: var(--soapstone);
+		font-style: italic;
+		font-family: var(--font-family-nunito);
+		font-size: 3.5vh;
+		margin-top: 1.3%;
+		background: rgba(215, 127, 161, 0.8);
+		border: 1px solid #FFFFFF;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 30px;
+		width: 40%;
+		height: 8vh;
+		justify-content: center;
+    	align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		transition:  0.2s;
+	}
+
+	.delete {
+		display: flex;
+		color: var(--soapstone);
+		font-style: italic;
+		font-family: var(--font-family-nunito);
+		font-size: 3.5vh;
+		margin-top: 1.3%;
+		background: #CFAFD0;
+		border: 1px solid #FFFFFF;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 30px;
+		width: 40%;
+		height: 8vh;
+		justify-content: center;
+    	align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		transition:  0.2s;
+	}
+
+	.back {
+		display: flex;
+		color: var(--soapstone);
+		font-style: italic;
+		font-family: var(--font-family-nunito);
+		font-size: 2.7vh;
+		margin-top: 1.3%;
+		background: #CFAFD0;
+		border: 1px solid #FFFFFF;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 30px;
+		width: 13%;
+		height: 6vh;
+		justify-content: center;
+    	align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		transition:  0.2s;
+	}
+
+	.details:hover {
+		background: #FFFFFF;
+		color: rgba(215, 127, 161, 0.8);
+	}
+
+	.code:hover {
+		background: #FFFFFF;
+		color: rgba(215, 127, 161, 0.8);
+	}
+
+	.access:hover {
+		background: #FFFFFF;
+		color: rgba(215, 127, 161, 0.8);
+	}
+
+	.logout:hover {
+		background: #FFFFFF;
+		color: rgba(215, 127, 161, 0.8);
+	}
+
+	.delete:hover {
+		background: #FFFFFF;
+		color: rgba(215, 127, 161, 0.8);
+	}
+
+	.back:hover {
+		background: #FFFFFF;
+		color: rgba(215, 127, 161, 0.8);
+	}
+
+	.details:active {
+		opacity: 0.4;
+	}
+
+	.code:active {
+		opacity: 0.4;
+	}
+
+	.access:active {
+		opacity: 0.4;
+	}
+
+	.logout:active {
+		opacity: 0.4;
+	}
+
+	.delete:active {
+		opacity: 0.4;
+	}
+
+	.back:active {
+		opacity: 0.4;
+	}
+
+
+	

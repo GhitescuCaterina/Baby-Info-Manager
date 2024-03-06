@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page child</title>
+    <link rel="shortcut icon" href="resurces/favicon.ico" type="image/x-icon" />
+    <link href="styles/main_page.css" rel="stylesheet" />
+  </head>
+  <body>
+    <article id="panel">
+      <section id="profile">
+        <div>
+          <img
+            id="picture"
+            src="resurces/images/child-profile.jpg"
+            alt="Baby profile photo"
+          />
+        </div>
+        <div id="btn-group">
+          <a href="your_children.html"
+            ><button><img src="resurces/icons/change.png" alt="" /></button
+          ></a>
+          <a href="child_settings.html"
+            ><button><img src="resurces/icons/setting.png" alt="" /></button
+          ></a>
+        </div>
+        <h1>Matthew Martin</h1>
+      </section>
+
+      <section id="calendar-container">
+        <div id="calendar-header">
+          <button id="prev-btn">&lt;</button>
+          <h1 id="month-name"></h1>
+          <button id="next-btn">&gt;</button>
+        </div>
+        <table id="calendar"></table>
+      </section>
+
+      <section id="contors">
+        <div>
+          <label for="weight">Weight</label>
+          <input
+            type="number"
+            step="0.01"
+            id="weight"
+            name="name"
+            placeholder=""
+          />
+          <input type="submit" hidden />
+        </div>
+        <div>
+          <label for="height">Height</label>
+          <input
+            type="number"
+            step="0.01"
+            id="height"
+            name="name"
+            placeholder=""
+          />
+          <!-- <input type="submit" hidden /> -->
+        </div>
+      </section>
+    </article>
+
+    <article id="details">
+      <section id="history">
+        <section id="journal">
+          <h2>Journal</h2>
+          <div class="labels">
+            <input
+              type="text"
+              id="note"
+              name="note"
+              placeholder="Write a memento..."
+            />
+            <input type="submit" hidden />
+            <div class="item">
+              <p class="text">"Today he said his first word"</p>
+              <div class="writer">
+                <p>Maria</p>
+                <p>|</p>
+                <p>12:30</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="memories">
+          <h2>Memories</h2>
+          <div class="labels">
+            <div class="item">
+              <p class="text">"Today he said his first word"</p>
+              <div class="writer">
+                <p>Maria</p>
+                <p>|</p>
+                <p>12:30</p>
+                <p>|</p>
+                <p>2022</p>
+              </div>
+            </div>
+            <div class="item">
+              <p class="text">"Today he said his first word"</p>
+              <div class="writer">
+                <p>Maria</p>
+                <p>|</p>
+                <p>12:30</p>
+                <p>|</p>
+                <p>2022</p>
+              </div>
+            </div>
+            <div class="item">
+              <p class="text">"Today he said his first word"</p>
+              <div class="writer">
+                <p>Maria</p>
+                <p>|</p>
+                <p>12:30</p>
+                <p>|</p>
+                <p>2021</p>
+              </div>
+            </div>
+            <div class="item">
+              <p class="text">"Today he said his first word"</p>
+              <div class="writer">
+                <p>Maria</p>
+                <p>|</p>
+                <p>12:30</p>
+                <p>|</p>
+                <p>2021</p>
+              </div>
+            </div>
+            <div class="item">
+              <p class="text">"Today he said his first word"</p>
+              <div class="writer">
+                <p>Maria</p>
+                <p>|</p>
+                <p>12:30</p>
+                <p>|</p>
+                <p>2020</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="btn-pages">
+        <a href="gallery.html"><button>Gallery</button></a>
+        <img src="resurces/icons/toy-train.png" />
+        <a href="medical_history.html"><button>Medical record</button></a>
+      </section>
+      <section id="schedule">
+        <section id="feed">
+          <h2>Feeding time</h2>
+          <div class="box-schedule">
+            <div>
+              <div class="schedule-item">
+                <label for="food">Food</label>
+                <input type="text" id="food" name="food" />
+              </div>
+              <div class="schedule-item">
+                <label for="time">At</label>
+                <input type="number" id="time" name="time" />
+              </div>
+              <button type="submit">
+                <img src="resurces/icons/check.png" alt="" />
+              </button>
+            </div>
+            <ul>
+              <li>
+                <p class="dish">Yogurt</p>
+                <p>09:30</p>
+                <button type="button">
+                  <img src="resurces/icons/close.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <p class="dish">Pasta</p>
+                <p>12:30</p>
+                <button type="button">
+                  <img src="resurces/icons/close.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <p class="dish">Cheese</p>
+                <p>13:30</p>
+                <button type="button">
+                  <img src="resurces/icons/close.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <p class="dish">Grapes</p>
+                <p>13:30</p>
+                <button type="button">
+                  <img src="resurces/icons/close.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <p class="dish">Smoothies</p>
+                <p>12:30</p>
+                <button type="button">
+                  <img src="resurces/icons/close.png" alt="" />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="sleep">
+          <h2>Sleeping time</h2>
+          <div class="box-schedule">
+            <div>
+              <div class="schedule-item">
+                <label for="start-time">From</label>
+                <input type="number" id="start-time" name="start-time" />
+              </div>
+              <div class="schedule-item">
+                <label for="end-time">To</label>
+                <input type="number" id="end-time" name="end-time" />
+              </div>
+              <button type="submit">
+                <img src="resurces/icons/check.png" alt="" />
+              </button>
+            </div>
+
+            <ul>
+              <li>
+                <p>02:00</p>
+                <p>09:30</p>
+                <button type="button">
+                  <img src="resurces/icons/close.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <p>11:00</p>
+                <p>12:30</p>
+                <button type="button">
+                  <img src="resurces/icons/close.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <p>15:00</p>
+                <p>19:30</p>
+                <button type="button">
+                  <img src="resurces/icons/close.png" alt="" />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="scripts/main_page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+:root {
+  --shadowcolor: rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-family: 'Nunito';
+  font-size: 2rem;
+  background-color: #fff9f9;
+  text-align: center;
+}
+
+.btn-home {
+  position: fixed;
+  top: 3.25rem;
+  right: 2%;
+  height: 7%;
+  width: 8%;
+
+  background: #dcd5ec;
+  box-shadow: 0 0.25rem 0.25rem var(--shadowcolor);
+  border-radius: 150px;
+  border: none;
+
+  color: white;
+  padding: 0.5rem 0.5rem;
+  z-index: 100;
+}
+
+.btn-home img {
+  height: 90%;
+}
+
+.btn-home:hover {
+  background: #b39ce9;
+}
+
+.btn-home:active {
+  box-shadow: none;
+}
+
+#box-list {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+ul {
+  padding: 0;
+}
+
+#box-list div:not(.box-item-content, .btn-list) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  list-style: none;
+}
+
+.box-item {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0.25rem var(--shadowcolor);
+  overflow: hidden;
+  position: relative;
+}
+
+#box-list .date {
+  background: #dcd5ec;
+  box-shadow: 0 0.25rem 0.25rem var(--shadowcolor);
+  border-radius: 30px;
+
+  color: #b39ce9;
+  padding: 1rem 1.5rem;
+}
+
+.btn-add > img {
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+}
+
+.box-item-content {
+  padding: 1rem;
+  font-size: 1rem;
+  display: block;
+  color: #6c727b;
+}
+
+.btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  box-shadow: 0 0.25rem 0.25rem var(--shadowcolor);
+  border-radius: 30px;
+  padding: 0.5rem 0.5rem;
+  width: 45%;
+  border: none;
+}
+
+.share {
+  background: #d6e5fa;
+}
+
+.delete {
+  background: rgba(214, 229, 250, 0.4);
+}
+
+.btn:hover {
+  background: #accaf4;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  #box-list div:not(.box-item-content) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-home {
+    top: 1rem;
+    right: 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media (min-width: 1460px) {
+  #box-list div:not(.box-item-content) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .box-item-content {
+    font-size: 0.7rem;
+  }
+
+  #box-list div:not(.box-item-content) {
+    grid-template-columns: 100%;
+  }
+
+  .btn-home {
+    top: 1rem;
+    right: 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}

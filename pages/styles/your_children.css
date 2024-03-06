@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:600italic,400,600');
+:root {
+  --purple: #bbabdb;
+  --blue: #d6e5fa;
+
+  --font-size-small: 20px;
+  --font-size-medium: 35px;
+  --font-size-large: 90px;
+
+  --font-nunito: 'Nunito';
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-nunito);
+  background-color: white;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: var(--font-size-large);
+  font-style: italic;
+  text-shadow: 1px 2px 4px gray;
+  text-align: center;
+  align-self: center;
+}
+
+button {
+  font-size: var(--font-size-medium);
+  display: inline-block;
+  background-color: rgba(187, 171, 219, 0.4);
+  color: Sblack;
+  width: 20rem;
+  height: 4rem;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 0rem;
+  border: none;
+  box-shadow: 1px 2px 4px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: rgba(187, 171, 219, 0.1);
+}
+
+.section {
+  display: flex;
+  background-color: var(--purple);
+  padding: 2vw;
+  width: 80vw;
+  margin: auto;
+  border-radius: 30px;
+  margin-bottom: 5rem;
+  box-shadow: 1px 2px 4px gray;
+}
+
+.section:hover, .section-plus:hover {
+  background-color: var(--blue);
+}
+
+.section-plus {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: rgba(187, 171, 219, 0.4);
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: center;
+  width: 80vw;
+  margin: auto;
+  border-radius: 30px;
+  margin-bottom: 5rem;
+  box-shadow: 1px 2px 4px gray;
+}
+
+.section img {
+  margin-right: 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+img {
+  width: 20vw;
+}
+
+.profile-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #333;
+}
+
+.p {
+  font-size: var(--font-size-small);
+}

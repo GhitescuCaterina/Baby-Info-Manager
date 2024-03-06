@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+}
+
+.box-item {
+  height: 25rem;
+}
+
+article > img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+p,
+input {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 80%;
+}
+
+mark {
+  color: #d77fa1;
+  background-color: white;
+}

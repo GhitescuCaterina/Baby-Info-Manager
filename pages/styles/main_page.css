@@ -1,0 +1,412 @@
+:root {
+  --shadowcolor: rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff9f9;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+  font-family: 'Nunito';
+  font-style: normal;
+  text-align: center;
+  color: rgba(51, 58, 70, 0.6);
+}
+
+#panel {
+  flex: initial;
+  padding: 2% 0;
+  margin: 0;
+  width: 35%;
+  /* width: max-content; */
+  display: block;
+  background-color: white;
+  right: 0px;
+}
+
+#profile #picture {
+  border-radius: 8rem;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+}
+
+#profile #btn-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+#profile button {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #b0b0b0;
+  box-shadow: 0 0.25rem 0.5rem var(--shadowcolor);
+}
+
+#profile button:hover {
+  background-color: #909090;
+}
+
+#profile button:active {
+  box-shadow: none;
+}
+
+#profile button img {
+  height: 65%;
+}
+
+#profile h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0.5rem 0 1rem 0;
+  color: #333a46;
+}
+
+#calendar-container {
+  width: fit-content;
+  margin: 0 auto 2rem;
+  background-color: #f0f4f7;
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+#month-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #383d49;
+}
+
+#calendar {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#calendar-header button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#month-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+td:hover {
+  background-color: #eee;
+}
+
+td.today {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+#contors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#contors div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+#contors label {
+  font-size: 1.5rem;
+  color: #333a46;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+#contors input {
+  width: 40%;
+  border: none;
+  border-bottom: 2px solid;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #baabda;
+}
+
+#details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#history {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: initial;
+  margin-bottom: 1rem;
+}
+
+#history section {
+  width: 45%;
+}
+
+h2 {
+  align-self: flex-start;
+  text-align: left;
+  color: #baabda;
+  font-weight: 900;
+}
+
+#history .labels {
+  background-color: white;
+  height: 15rem;
+  overflow: auto;
+  padding: 1rem;
+}
+
+#journal .labels {
+  border-radius: 10px 0 0 10px;
+}
+
+#memories .labels {
+  border-radius: 0 10px 10px 0;
+}
+
+#history input {
+  background-color: gray;
+  height: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(217, 217, 217, 0.58);
+  border-radius: 30px;
+  border: none;
+}
+
+#history .item {
+  background: #dcd5ec;
+  border-radius: 30px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+#history .writer {
+  align-self: flex-end;
+  border-radius: 30px 30px 0px 30px;
+  background-color: #f0f4f7;
+  width: fit-content;
+  display: flex;
+}
+
+#history .writer p {
+  margin: 0 0.25rem;
+}
+
+#btn-pages {
+  display: flex;
+  justify-content: space-around;
+  height: 3rem;
+}
+
+#btn-pages img {
+  height: 100%;
+}
+
+#btn-pages button {
+  background: #c4a6e7;
+  box-shadow: 0px 4px 4px var(--shadowcolor);
+  border: none;
+  border-radius: 30px;
+  height: 3rem;
+  width: 12rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#btn-pages button:hover {
+  background-color: #b192d6;
+}
+
+#btn-pages button:active {
+  box-shadow: none;
+}
+
+#schedule {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 4rem;
+  font-size: 1.2rem;
+}
+
+#schedule section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#schedule h2 {
+  color: #d77fa1;
+}
+
+.box-schedule > div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.schedule-item {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.box-schedule > ul {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 0;
+  height: 8rem;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.box-schedule {
+  background-color: white;
+  height: 100%;
+  box-shadow: 0px 0px 20px var(--shadowcolor);
+  border-radius: 10px;
+}
+
+.box-schedule button {
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.25rem;
+  box-shadow: 0px 4px 10px var(--shadowcolor);
+  border-radius: 5px;
+}
+
+.box-schedule img {
+  object-fit: cover;
+  width: 90%;
+}
+
+li > p {
+  margin: 0.5rem;
+}
+
+.dish {
+  width: 35%;
+}
+
+div + button {
+  background: #2ecc71;
+}
+
+div + button:hover {
+  background: #24b863;
+}
+
+li > button {
+  background: #e74c3c;
+}
+
+li > button:hover {
+  background: #cc3e2f;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #panel {
+    width: 100%;
+  }
+
+  #profile #btn-group {
+    justify-content: space-evenly;
+  }
+  #schedule {
+    flex-direction: column;
+    align-items: center;
+  }
+  #schedule section {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #profile #btn-group {
+    justify-content: space-around;
+  }
+
+  #history .writer p {
+    font-size: 0.75rem;
+  }
+
+  #btn-pages {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  #btn-pages img {
+    height: 5rem;
+  }
+
+  #schedule section {
+    width: 100%;
+  }
+}

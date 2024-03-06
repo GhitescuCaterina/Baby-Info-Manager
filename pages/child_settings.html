@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child settings</title>
+    <link rel="shortcut icon" href="resurces/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="styles/child_settings.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Child settings</h1>
+    </div>
+    <div class="details">
+      <div id="form-section">
+        <section>
+          <p>First name</p>
+          <input type="text" name="first-name" />
+        </section>
+        <section>
+          <p>Last name</p>
+          <input type="text" name="last-name" />
+        </section>
+        <section>
+          <p>Username</p>
+          <input type="text" name="username" />
+        </section>
+        <section>
+          <p>Date of birth</p>
+          <input type="date" name="birthdate" />
+        </section>
+        <section>
+          <p>Gender</p>
+          <div class="gender-box">
+            <button class="gender-option" id="female">F</button>
+            <button class="gender-option" id="male">M</button>
+          </div>
+        </section>
+      </div>
+      <div id="picture-section">
+        <label>
+          <img
+            src="https://via.placeholder.com/300x300"
+            alt="Profile Picture"
+          />
+          <input type="file" name="profile-picture" style="display: none" />
+          <p id="picture-text">Change picture</p>
+        </label>
+      </div>
+    </div>
+    <div id="buttons-section">
+      <button id="lighter" onclick="window.location ='main_page.html'">
+        Go Back
+      </button>
+      <button type="submit" onclick="window.location ='main_page.html'">
+        Save
+      </button>
+    </div>
+    <div id="more-buttons">
+      <button id="lighter">Delete account</button>
+      <button id="lighter">Import CSV/JSON</button>
+      <button id="lighter">Export CSV/JSON</button>
+    </div>
+  </body>
+</html>

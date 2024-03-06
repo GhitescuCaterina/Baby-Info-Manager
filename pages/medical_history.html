@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical History</title>
+    <link rel="shortcut icon" href="resurces/favicon.ico" type="image/x-icon" />
+    <link href="styles/generic_page.css" rel="stylesheet" />
+    <link href="styles/medical_history.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="main_page.html"
+      ><button class="btn-home">
+        <img src="resurces/icons/home_icon.png" /></button
+    ></a>
+    <section id="box-list">
+      <ul>
+        <h1 class="date">03/01</h1>
+        <div>
+          <li class="box-item">
+            <div class="box-item-content">
+              <p>ENT</p>
+              <p>Consultation</p>
+              <div class="btn-list">
+                <button class="btn share">Edit</button>
+                <button class="btn delete">Delete</button>
+              </div>
+            </div>
+          </li>
+          <li class="box-item">
+            <div class="box-item-content">
+              <p>Dental</p>
+              <p>Consultation</p>
+              <div class="btn-list">
+                <button class="btn share">Edit</button>
+                <button class="btn delete">Delete</button>
+              </div>
+            </div>
+          </li>
+          <li class="box-item">
+            <a href="#popup" class="btn-add"
+              ><img src="resurces/icons/plus_icon.png"
+            /></a>
+          </li>
+        </div>
+      </ul>
+
+      <ul>
+        <h1 class="date">31/12/2022</h1>
+        <div>
+          <li class="box-item">
+            <div class="box-item-content">
+              <p>Dental Consultation</p>
+              <div class="btn-list">
+                <button class="btn share">Edit</button>
+                <button class="btn delete">Delete</button>
+              </div>
+            </div>
+          </li>
+          <li class="box-item">
+            <a href="#popup" class="btn-add"
+              ><img src="resurces/icons/plus_icon.png"
+            /></a>
+          </li>
+        </div>
+      </ul>
+    </section>
+    <div id="popup" class="overlay">
+      <div class="popup">
+        <h1>Add a note about the consultation</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <label for="specialization">Medical specialization:</label>
+          <input
+              type="text"
+              id="specialization"
+              name="specialization"
+            />
+            <label for="name">Doctor`s name: </label>
+          <input
+              type="text"
+              id="name"
+              name="name"
+            />
+            <label for="medication">Medication:</label>
+          <input
+              type="text"
+              id="medication"
+              name="medication"
+            />
+            <label for="symptoms">Symptoms: </label>
+          <input
+              type="text"
+              id="symptoms"
+              name="symptoms"
+            />
+            <label for="overall">Overall health:</label>
+          <input
+              type="text"
+              id="overall"
+              name="overall"
+            />
+            <label for="next">Next appointment: </label>
+          <input
+              type="datetime"
+              id="next"
+              name="next"
+            />
+            <button class="btn" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
